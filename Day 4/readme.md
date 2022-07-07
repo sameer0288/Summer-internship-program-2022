@@ -8,9 +8,12 @@ Object is a runtime instance of class
 Function is a block of code that can be reusable
 ## Scope
 There are two types of scope
-Global Scope
-Local Scope
-Conditionals
+
+--Global Scope
+
+--Local Scope
+
+## Conditionals
 In programming there are conditional statements that we use when we have to evaluate conditions in the programming.
 
 In Javascript there , when we deal with conditions we deal with Truthy or Falsy values.
