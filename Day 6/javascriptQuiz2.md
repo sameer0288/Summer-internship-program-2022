@@ -1,4 +1,4 @@
-# Assignment 1 Week 2 Day 1
+# Assignment 2 Week 2 Day 1
 
 ## Theory:
 
