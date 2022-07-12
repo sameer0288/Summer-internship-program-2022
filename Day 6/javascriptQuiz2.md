@@ -30,4 +30,24 @@
         
       - Yes, in JS, a function does indeed behave like an object.
       - This is because essentially, a function IS an object but with special properties and methods. 
+        
+         Example:
       
+             // Function declaration.
+               function showFavoriteIceCream() {
+                   const favIceCream = 'chocolate';
+               console.log(`My favorite ice cream is ${favIceCream}`);
+               }
+                showFavoriteIceCream.flavours = ['chocolate', 'vanilla', 'strawberry'];
+
+             // Let's log the showFavoriteIceCream function.
+                console.log(showFavoriteIceCream);
+
+             // Log
+             // { [Function: showFavoriteIceCream]
+             // flavours: [ 'chocolate', 'vanilla', 'strawberry' ] } -> property assigned
+             
+             
+4. ### What are Events in Javascript?
+
+     The change in the state of an object is known as an Event. In html, there are various events which represents that some activity is performed by the user or by the browser. When javascript code is included in HTML, js react over these events and allow the execution. This process of reacting over the events is called Event Handling. Thus, js handles the HTML events via Event Handlers.
