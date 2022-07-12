@@ -123,3 +123,52 @@
 3. Using every method.
 4. Using map.
 
+
+<hr>
+
+## Programs:
+
+1. ### Reverse an array? Input: [1, 2, 3, 4, 5, 6]
+
+  
+```js
+arr = [1, 2, 3, 4, 5, 6];
+arr1 = [];
+arr.forEach(element => {
+    arr1.unshift(element)
+});
+console.log(arr1);
+
+//Output: [6, 5, 4, 3, 2, 1]
+```
+
+
+2. ### Explain the properties of the join array method function via program?
+
+ ```js
+const arr = [1, 2, 3, 4];
+
+console.log(arr.join()); // Output :- 1,2,3,4
+
+console.log(arr.join(" - ")); // Output :- 1 - 2 - 3 - 4 
+
+console.log(arr.join(",")); // Output :- 1,2,3,4
+```
+
+
+3. ### Show all the values of an array in a html webpage using DOM and forEach method?
+   
+```js
+const fruits = ["apple", "orange", "cherry"];
+fruits.forEach(myFunction);
+```
+     
+
+4. ### Merge to sets in javascript?
+
+```js
+const set1 = new Set(["one", "two"]);
+const set2 = new Set(["three"]);
+const set3 = new Set([...set1, ...set2]);
+console.log(set3); // {'one', 'two', 'three'}
+```
