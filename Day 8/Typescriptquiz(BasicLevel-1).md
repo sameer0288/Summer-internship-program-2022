@@ -75,3 +75,11 @@ interface Date {
         
      A Generic class simply means that the items or functions in that class can be generalized with the parameter(example T) to specify that we can add any type as a parameter in place of T like Integer, Character, String, Double or any other user-defined type.
      - These classes are known as parameterized classes or parameterized types because they accept one or more parameters.
+    
+    
+     
+     <hr>
+
+## Programs:
+
+1. ### Define type/interface for a single Todo object.
