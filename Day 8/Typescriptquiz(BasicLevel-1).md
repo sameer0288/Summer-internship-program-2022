@@ -76,10 +76,39 @@ interface Date {
      A Generic class simply means that the items or functions in that class can be generalized with the parameter(example T) to specify that we can add any type as a parameter in place of T like Integer, Character, String, Double or any other user-defined type.
      - These classes are known as parameterized classes or parameterized types because they accept one or more parameters.
     
-    
+     For example:
+
+   ```ts
+   class StudentInfo<T, U> {
+     private Id: T;
+     private Name: U;
+
+     setValue(id: T, mame: U): void {
+       this.Id = id;
+       this.Name = name;
+     }
+
+     display(): void {
+       console.log(`Id = ${this.Id}, Name = ${this.Name}`);
+     }
+   }
+
+   let student1 = new StudentInfo<number, string>();
+   student1.setValue(123, "Sameer");
+   student1.display();
+   ```
+
      
-     <hr>
+    <hr>
 
-## Programs:
+## Program:
 
-1. ### Define type/interface for a single Todo object.
+1. ### Define the types in typescript for the given following JavaScript code.
+
+   Todo:
+
+   - Define type/interface for a single Todo object.
+   - Define type for each function.
+   - Do not use `any` (TS Data Type) type of typescript.
+
+   Code(Js):
