@@ -134,7 +134,7 @@ interface Date {
    ```
    Solution :
    
-    ```ts
+```ts
    class Entry {
      name: string;
      description: string;
@@ -169,4 +169,4 @@ interface Date {
 
    console.log(add("Go to College", "Do some Assignments"));        // 1
    list();        // 0 - Go to College
-   ```
+```
