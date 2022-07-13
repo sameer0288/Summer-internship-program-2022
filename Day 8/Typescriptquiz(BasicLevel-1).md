@@ -38,7 +38,7 @@
       
   - Method signatures.
      
-        The method signature syntax is probably the most straightforward to use. When defining an object type
+      The method signature syntax is probably the most straightforward to use. When defining an object type
 ```
 interface Date {
   toString(): string;
