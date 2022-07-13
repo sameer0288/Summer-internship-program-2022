@@ -112,3 +112,61 @@ interface Date {
    - Do not use `any` (TS Data Type) type of typescript.
 
    Code(Js):
+
+```js
+   var todos = [];
+   function add(name, description) {
+     return todos.push({ name: name, description: description, done: false });
+   }
+   function remove(index) {
+     return todos.splice(index, 1);
+   }
+   function list() {
+     todos.forEach(function (todo, index) {
+       console.log(index + " -" + todo.name);
+     });
+   }
+   function update(index, name, description) {
+     todos[index].name = name;
+     todos[index].description = description;
+     return todos[index];
+   }
+   ```
+   Solution :
+   
+    ```ts
+   class Entry {
+     name: string;
+     description: string;
+     done: boolean;
+   }
+
+   var todos: Entry[] = [];
+
+   function add(name: string, description: string): number {
+     return todos.push({
+       name: name,
+       description: description,
+       done: false,
+     });
+   }
+
+   function remove(index: number): Entry[] {
+     return todos.splice(index, 1);
+   }
+
+   function list(): void {
+     todos.forEach(function (todo: Entry, index: number) {
+       console.log(index + " - " + todo.name);
+     });
+   }
+
+   function update(index: number, name: string, description: string): Entry {
+     todos[index].name = name;
+     todos[index].description = description;
+     return todos[index];
+   }
+
+   console.log(add("Go to College", "Do some Assignments"));        // 1
+   list();        // 0 - Go to College
+   ```
