@@ -1,6 +1,6 @@
 const Image = ({ data }) => {
-    return ( <
-        a href = { data.urls.regular }
+    return ( 
+        < a href = { data.urls.regular }
         target = "_blank"
         rel = "noreferrer" >
         <
